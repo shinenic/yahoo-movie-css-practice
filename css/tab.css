@@ -10,6 +10,8 @@
 .options > div {
   display: table-cell;
   vertical-align: top;
+  border-bottom: 4px solid white;
+  transition:all 0.2s;
 }
 .options > div:nth-child(1) {
   text-align: start;
@@ -19,7 +21,7 @@
   text-align: end;
   padding-right: 32px;
 }
-.options--active {
+.options > div.options--active {
   color: #8300ff;
   border-bottom: 4px solid #8300ff;
 }
