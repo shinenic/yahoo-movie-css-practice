@@ -1,9 +1,11 @@
 .score {
   width: 100%;
+  margin-bottom:2vw;
 }
 /* total */
 .score__total {
-  height: 12vw;
+  width: 100%;
+  height: 10.54vw;
   line-height: 12vw;
   font-size: 28px;
   font-size:3.73vw;
@@ -23,6 +25,57 @@
   justify-content: end;
   font-size:3.73vw;
 }
-.score__single__item::after {
-  content: "★";
+
+/* single */
+.score__single {
+  width: 100%;
+  height: 6.67vw;
+  line-height: 6.67vw;
+  font-size: 28px;
+  font-size:3.73vw;
+  display: grid;
+  grid-template-columns: 14.8vw 1fr 19.34vw;
+  grid-template-areas: "item bar count";
 }
+.score__single__item {
+  grid-area: item;
+}
+.score__single__bar {
+  grid-area: bar;
+  display:grid;
+  align-items: center;
+}
+.score__single__count {
+  grid-area: count;
+  display: grid;
+  justify-content: end;
+}
+.score__single__item::after {
+  content: " ★";
+}
+.score__single__bar__container {
+  height:20px;
+  width:100%;
+  background: linear-gradient(to right, #fada65, #fc8600);
+}
+.score__single__bar__container > div {
+  float:right;
+  height:20px;
+  background: #f2f1f6;
+}
+.score-1 {
+  width:14%;
+}
+.score-2 {
+  width:40%;
+}
+.score-3 {
+  width:75%;
+}
+.score-4 {
+  width:90%;
+}
+.score-5 {
+  width:91%;
+}
+
