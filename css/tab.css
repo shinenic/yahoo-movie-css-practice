@@ -1,10 +1,11 @@
 .options {
   height: 8.1vw;
-  width: 100%;
+  width: calc(100% - 32px);
   padding: 0;
+  margin:0 16px;
   display: table;
   text-align: center;
-  border-bottom: 1px solid #dcdcdc;
+  /* border-bottom: 1px solid #dcdcdc; */
   cursor:pointer;
 }
 .options > div {
@@ -15,13 +16,18 @@
 }
 .options > div:nth-child(1) {
   text-align: start;
-  padding-left: 32px;
+  padding-left:16px;
 }
 .options > div:nth-last-child(1) {
   text-align: end;
-  padding-right: 32px;
+  padding-right:16px;
 }
 .options > div.options--active {
   color: #8300ff;
   border-bottom: 4px solid #8300ff;
+}
+.break-line {
+  background:#dcdcdc;
+  height:1px;
+  width:100%;
 }
