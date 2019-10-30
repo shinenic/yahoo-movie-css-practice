@@ -1,7 +1,7 @@
 /* movie */
 .movie {
   padding-top: 4.1vw;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   height: 46.5vw;
   display: grid;
@@ -43,5 +43,6 @@
   justify-content: end;
 }
 .movie__share > img {
+  cursor: pointer;
   max-height: 6.66vw;
 }

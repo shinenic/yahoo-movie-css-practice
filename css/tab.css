@@ -1,17 +1,25 @@
-
 .options {
-  height: 50px;
+  height: 8.1vw;
   width: 100%;
   padding: 0;
   display: table;
   text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+  cursor:pointer;
 }
 .options > div {
   display: table-cell;
-  padding-top: 10px;
   vertical-align: top;
 }
+.options > div:nth-child(1) {
+  text-align: start;
+  padding-left: 32px;
+}
+.options > div:nth-last-child(1) {
+  text-align: end;
+  padding-right: 32px;
+}
 .options--active {
-  color: red;
-  border-bottom: 3px solid black;
+  color: #8300ff;
+  border-bottom: 4px solid #8300ff;
 }

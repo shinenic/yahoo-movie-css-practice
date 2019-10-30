@@ -1,6 +1,17 @@
 
 /* newest-comment */
 .newest-comment {
-  border: 1px solid black;
-  padding: 10px;
+  font-size: 28px;
+  font-size:3.73vw;
+  line-height: 5.34vw;
+  margin-top: 3.2vw;
+  margin-bottom:6vw;
+}
+.newest-comment > span:nth-child(1) {
+  font-size: 24px;
+  font-size:3.2vw;
+  color:white;
+  background: #8300ff;
+  border-radius: 5px;
+  padding:5px 8px;
 }

@@ -47,6 +47,8 @@ header {
 main {
   width: 100vw;
   margin-top: 94px;
+}
+main > div{
   padding: 0 32px;
 }
 
