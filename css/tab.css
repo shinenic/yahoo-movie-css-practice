@@ -1,8 +1,8 @@
 .options {
   height: 8.1vw;
-  width: calc(100% - 32px);
+  width: calc(100% - 64px);
   padding: 0;
-  margin:0 16px;
+  margin:0 32px;
   display: table;
   text-align: center;
   /* border-bottom: 1px solid #dcdcdc; */
@@ -16,11 +16,9 @@
 }
 .options > div:nth-child(1) {
   text-align: start;
-  padding-left:16px;
 }
 .options > div:nth-last-child(1) {
   text-align: end;
-  padding-right:16px;
 }
 .options > div.options--active {
   color: #8300ff;
