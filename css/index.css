@@ -1,0 +1,53 @@
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",
+    "標楷體", "DFKai-SB", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: white;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 94px;
+  padding: 17px auto;
+  position: fixed;
+  top:0;
+  left:0;
+  box-shadow: 0 3px 10px 0 rgba(108, 108, 108, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__back {
+  max-height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 26px;
+  transform: translateY(-50%);
+}
+.header__title {
+  max-height: 50px;
+  height: 100%;
+}
+
+main {
+  width: 100vw;
+  margin-top: 94px;
+  padding: 0 32px;
+}
+
+

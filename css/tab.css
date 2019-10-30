@@ -1,0 +1,17 @@
+
+.options {
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  display: table;
+  text-align: center;
+}
+.options > div {
+  display: table-cell;
+  padding-top: 10px;
+  vertical-align: top;
+}
+.options--active {
+  color: red;
+  border-bottom: 3px solid black;
+}

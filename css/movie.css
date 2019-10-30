@@ -1,0 +1,47 @@
+/* movie */
+.movie {
+  padding-top: 4.1vw;
+  border: 1px solid black;
+  width: 100%;
+  height: 46.5vw;
+  display: grid;
+  grid-template-columns: 31.2vw 1fr;
+  grid-template-rows: 1fr 6.67vw;
+  grid-template-areas:
+    "wallpaper info"
+    "wallpaper share";
+}
+/* wallpaper */
+.movie__wallpaper {
+  grid-area: wallpaper;
+}
+.movie__wallpaper > img {
+  max-height: 42.3vw;
+}
+/* info */
+.movie__info {
+  grid-area: info;
+}
+.movie__info__Title-TW {
+  font-size:32px;
+  font-size:4.26vw;
+  font-weight: bold;
+}
+.movie__info__Title-EN {
+  font-size: 28px;
+  font-size:3.73vw;
+  font-weight: bold;
+}
+.movie__info__detail {
+  font-size: 24px;
+  font-size:3.2vw;
+}
+/* share */
+.movie__share {
+  grid-area: share;
+  display:grid;
+  justify-content: end;
+}
+.movie__share > img {
+  max-height: 6.66vw;
+}

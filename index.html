@@ -2,20 +2,36 @@
 
   <head>
     <meta charset="UTF-8">
-    <link href="./yahoo.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yahoo</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/movie.css" rel="stylesheet">
+    <link href="./css/newest-comment.css" rel="stylesheet">
+    <link href="./css/tab.css" rel="stylesheet">
   </head>
-
   <body>
-    <div class="wrapped">
-      <header class="header">
-        <!-- <div class="header__back"></div> -->
-        <img class="header__back" src="./img/back.png" />
-        <!-- <a class="header__title"> -->
-        <img class="header__title" src="./img/yahoo-logo.png" />
-        <!-- </div> -->
-      </header>
+    <!-- HEADER -->
+    <header>
+      <img class="header__back" src="./img/back.png" />
+      <img class="header__title" src="./img/yahoo-logo.png" />
+    </header>
+    <!-- MAIN -->
+    <main>
       <div class="movie">
+        <div class="movie__wallpaper">
+          <img src="./img/wallpaper.png" />
+        </div>
+        <div class="movie__info">
+          <span class="movie__info__Title-TW">一個巨星的誕生<br/></span>
+          <span class="movie__info__Title-EN">A Star Is Born<br/></span>
+          <span class="movie__info__detail">上映日期：2018-10-05<br/></span>
+          <span class="movie__info__detail">類型：驚悚、喜劇<br/></span>
+          <span class="movie__info__detail">IMDB分數：7.1<br/></span>
+          <span class="movie__info__detail">滿意度：1.5<br/></span>
+        </div>
+        <div class="movie__share">
+            <img src="./img/share.png" />
+        </div>
 
       </div>
       <div class="newest-comment">
@@ -27,14 +43,6 @@
         <div class="options--active">網友短評(22,000)</div>
         <div>查時刻表</div>
         <div>訂票</div>
-        <!-- <table width="100%">
-          <tr>
-            <td>電影資訊</td>
-            <td class="options--active">網友短評(22,000)</td>
-            <td>查時刻表</td>
-            <td>訂票</td>
-          </tr>
-        </table> -->
       </div>
       <div class=score>
 
@@ -42,7 +50,7 @@
       <div class=comment>
 
       </div>
-    </div>
+    </main>
   </body>
 
 </html>
