@@ -40,11 +40,18 @@
   font-size: 28px;
   font-size: 3.73vw;
   display: grid;
-  grid-template-columns: 14.8vw 1fr 19.34vw;
-  grid-template-areas: "item bar count";
+  align-items: center;
+  grid-template-columns: 3.74vw 11.06vw 1fr 19.34vw;
+  grid-template-areas: "item star-icon bar count";
   &__item {
     font-weight: bold;
     grid-area: item;
+  }
+  &__star-icon {
+    grid-area: star-icon;
+    & > img {
+      max-height: 3vw;
+    }
   }
   &__bar {
     grid-area: bar;
@@ -56,9 +63,9 @@
     display: grid;
     justify-content: end;
   }
-  &__item::after {
-    content: " ★";
-  }
+  // &__item::after {
+  //   content: " ★";
+  // }
   &__bar__container {
     height: 20px;
     height: 2.67vw;
