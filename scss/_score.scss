@@ -14,6 +14,7 @@
   grid-template-areas: "item stars count";
   &__item {
     grid-area: item;
+    font-weight: bold;
   }
   &__stars {
     grid-area: stars;
@@ -23,6 +24,7 @@
     }
   }
   &__count {
+    font-weight: bold;
     grid-area: count;
     display: grid;
     justify-content: end;
@@ -41,6 +43,7 @@
   grid-template-columns: 14.8vw 1fr 19.34vw;
   grid-template-areas: "item bar count";
   &__item {
+    font-weight: bold;
     grid-area: item;
   }
   &__bar {

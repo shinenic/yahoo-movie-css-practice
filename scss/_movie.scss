@@ -22,18 +22,47 @@
 .movie__info {
   grid-area: info;
   &__Title-TW {
+    display: flex;
+    align-items: center;
     font-size: 32px;
     font-size: 4.26vw;
     font-weight: bold;
+    & > img {
+      max-height: 4.26vw;
+      margin-left: 3.46vw;
+    }
   }
   &__Title-EN {
     font-size: 28px;
     font-size: 3.73vw;
+    line-height: 6.67vw;
     font-weight: bold;
   }
   &__detail {
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-size: 3.2vw;
+    line-height: 5vw;
+    & > img {
+      max-height: 2.67vw;
+      margin-right: 1vw;
+    }
+    // avg score
+    & > span:nth-child(7) {
+      font-weight: bold;
+      color: red;
+    }
+    // edit icon
+    & > img:nth-child(8) {
+      max-height: 3.34vw;
+      margin: auto 0.8vw auto 2.13vw;
+    }
+    // edit text
+    & > span:nth-child(9) {
+      color: #188fff;
+      text-decoration: underline;
+    }
   }
 }
 
