@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Yahoo</title>
-    <link href="./css/index.css" rel="stylesheet">
-    <link href="./css/movie.css" rel="stylesheet">
-    <link href="./css/newest-comment.css" rel="stylesheet">
-    <link href="./css/tab.css" rel="stylesheet">
-    <link href="./css/score.css" rel="stylesheet">
-    <link href="./css/comment.css" rel="stylesheet">
+    <link href="./src/index.css" rel="stylesheet">
   </head>
 
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
       <img class="header__back" src="./img/back.png" />
       <img class="header__title" src="./img/yahoo-logo.png" />
     </header>
     <!-- MAIN -->
     <main>
+      <!-- MOVIE -->
       <div class="movie">
         <div class="movie__wallpaper">
           <img src="./img/wallpaper.png" />
@@ -37,10 +33,12 @@
         </div>
 
       </div>
+      <!-- NEWEST_COMMENT -->
       <div class="newest-comment">
         <span>最新評論</span>
         <span>還可以!雖不算曼威電影非常棒的作品，但還是值得進電影院看，雖不算曼威電影非常棒的作品，但還是值得進電影院看，給你............</span>
       </div>
+      <!-- TAB -->
       <div class="options">
         <div>電影資訊</div>
         <div class="options--active">網友短評(22,000)</div>
@@ -48,16 +46,21 @@
         <div>訂票</div>
       </div>
       <div class="break-line"></div>
+      <!-- SCORE -->
       <div class="score">
-        <!-- total -->
         <div class="score__total">
           <div class="score__total__item">總評分</div>
-          <div class="score__total__stars">★★★★★</div>
+          <div class="score__total__stars">
+            <img src="./img/s_full.png">
+            <img src="./img/s_full.png">
+            <img src="./img/s_full.png">
+            <img src="./img/s_full.png">
+            <img src="./img/s_full.png">
+          </div>
           <div class="score__total__count">共22,000人投票</div>
         </div>
-        <!-- single -->
         <div class="score__single">
-          <div class="score__single__item">1</div>
+          <div class="score__single__item">5</div>
           <div class="score__single__bar">
             <div class="score__single__bar__container">
               <div class="score-1"></div>
@@ -66,7 +69,7 @@
           <div class="score__single__count">18,900</div>
         </div>
         <div class="score__single">
-          <div class="score__single__item">2</div>
+          <div class="score__single__item">4</div>
           <div class="score__single__bar">
             <div class="score__single__bar__container">
               <div class="score-2"></div>
@@ -84,7 +87,7 @@
           <div class="score__single__count">10</div>
         </div>
         <div class="score__single">
-          <div class="score__single__item">4</div>
+          <div class="score__single__item">2</div>
           <div class="score__single__bar">
             <div class="score__single__bar__container">
               <div class="score-4"></div>
@@ -93,7 +96,7 @@
           <div class="score__single__count">10</div>
         </div>
         <div class="score__single">
-          <div class="score__single__item">5</div>
+          <div class="score__single__item">1</div>
           <div class="score__single__bar">
             <div class="score__single__bar__container">
               <div class="score-5"></div>
@@ -103,12 +106,23 @@
         </div>
       </div>
       <div class="break-line"></div>
-
+      <!-- COMMENT -->
       <div class="comment">
-
+        <div class="rate">
+          <span>點一下來評分：</span>
+          <img src="./img/s_full.png" class="rate__star">
+          <img src="./img/s_full.png" class="rate__star">
+          <img src="./img/s_empty.png" class="rate__star">
+          <img src="./img/s_empty.png" class="rate__star">
+          <img src="./img/s_empty.png" class="rate__star">
+        </div>
+        <textarea placeholder="輸入評論 (至少十五個字)"></textarea>
+        <div class="submit">
+          <button>發 表</button>
+        </div>
       </div>
     </main>
-    <script src="./js/index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 
 </html>

@@ -1,0 +1,26 @@
+.options {
+  height: 8.1vw;
+  width: calc(100% - 64px);
+  padding: 0;
+  margin:0 32px;
+  display: table;
+  text-align: center;
+  /* border-bottom: 1px solid #dcdcdc; */
+  cursor:pointer;
+  & > div {
+    display: table-cell;
+    vertical-align: top;
+    border-bottom: 4px solid white;
+    transition:all 0.2s;
+  }
+  & > div:nth-child(1) {
+    text-align: start;
+  }
+  & > div:nth-last-child(1) {
+    text-align: end;
+  }
+  & > div.options--active {
+    color: #8300ff;
+    border-bottom: 4px solid #8300ff;
+  }
+}

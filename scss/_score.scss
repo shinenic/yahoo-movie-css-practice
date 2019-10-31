@@ -1,0 +1,87 @@
+.score {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+/* total */
+.score__total {
+  width: 100%;
+  height: 10.54vw;
+  line-height: 12vw;
+  font-size: 28px;
+  font-size: 3.73vw;
+  display: grid;
+  grid-template-columns: 14.67vw 0.5fr 0.5fr;
+  grid-template-areas: "item stars count";
+  &__item {
+    grid-area: item;
+  }
+  &__stars {
+    grid-area: stars;
+    & > img {
+      max-width: 3.73vw;
+      max-height: 3.73vw;
+    }
+  }
+  &__count {
+    grid-area: count;
+    display: grid;
+    justify-content: end;
+    font-size: 3.73vw;
+  }
+}
+
+/* single */
+.score__single {
+  width: 100%;
+  height: 6.67vw;
+  line-height: 6.67vw;
+  font-size: 28px;
+  font-size: 3.73vw;
+  display: grid;
+  grid-template-columns: 14.8vw 1fr 19.34vw;
+  grid-template-areas: "item bar count";
+  &__item {
+    grid-area: item;
+  }
+  &__bar {
+    grid-area: bar;
+    display: grid;
+    align-items: center;
+  }
+  &__count {
+    grid-area: count;
+    display: grid;
+    justify-content: end;
+  }
+  &__item::after {
+    content: " ★";
+  }
+  &__bar__container {
+    height: 20px;
+    height: 2.67vw;
+    width: 100%;
+    background: linear-gradient(to right, #fada65, #fc8600);
+  }
+  &__bar__container > div {
+    float: right;
+    height: 20px;
+    height: 2.67vw;
+    background: #f2f1f6;
+  }
+}
+
+.score-1 {
+  width: 14%;
+}
+.score-2 {
+  width: 40%;
+}
+.score-3 {
+  width: 75%;
+}
+.score-4 {
+  width: 90%;
+}
+.score-5 {
+  width: 91%;
+}

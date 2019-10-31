@@ -14,35 +14,36 @@
 /* wallpaper */
 .movie__wallpaper {
   grid-area: wallpaper;
-}
-.movie__wallpaper > img {
-  max-height: 42.3vw;
+  & > img {
+    max-height: 42.3vw;
+  }
 }
 /* info */
 .movie__info {
   grid-area: info;
+  &__Title-TW {
+    font-size: 32px;
+    font-size: 4.26vw;
+    font-weight: bold;
+  }
+  &__Title-EN {
+    font-size: 28px;
+    font-size: 3.73vw;
+    font-weight: bold;
+  }
+  &__detail {
+    font-size: 24px;
+    font-size: 3.2vw;
+  }
 }
-.movie__info__Title-TW {
-  font-size:32px;
-  font-size:4.26vw;
-  font-weight: bold;
-}
-.movie__info__Title-EN {
-  font-size: 28px;
-  font-size:3.73vw;
-  font-weight: bold;
-}
-.movie__info__detail {
-  font-size: 24px;
-  font-size:3.2vw;
-}
+
 /* share */
 .movie__share {
   grid-area: share;
-  display:grid;
+  display: grid;
   justify-content: end;
-}
-.movie__share > img {
-  cursor: pointer;
-  max-height: 6.66vw;
+  & > img {
+    cursor: pointer;
+    max-height: 6.66vw;
+  }
 }
