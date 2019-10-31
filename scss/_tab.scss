@@ -7,11 +7,13 @@
   text-align: center;
   /* border-bottom: 1px solid #dcdcdc; */
   cursor:pointer;
-  & > div {
+  & > div {    
+    font-size: 30px;
+    font-size: 4vw;
     display: table-cell;
     vertical-align: top;
     border-bottom: 4px solid white;
-    transition:all 0.2s;
+    transition:color 0.2s, border-bottom 0.2s;
   }
   & > div:nth-child(1) {
     text-align: start;
